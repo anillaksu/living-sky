@@ -50,6 +50,7 @@ They must match. If scenes were regenerated (`python tools/generate.py`), run `r
 | `tools/generate.py` | draws the twelve scenes into `assets/` (seeded, reproducible) |
 | `tools/review.py`, `tools/scenarios.py` | renders scenes as the terminal shows them and measures legibility and seams |
 | `tools/promo.py` | `docs/scenes.png` and `docs/social-preview.png` |
+| `tools/demo.py` | `docs/demo.gif`: one turn rendered with review.py's terminal model (not a recording) |
 
 Rules the code depends on (each has a test; keep it green):
 - living-sky paints **only its own profile** (GUID `{d909991b-4fa0-42d3-955b-720d7342c425}`). A GUID that is not in the
@@ -60,9 +61,7 @@ Rules the code depends on (each has a test; keep it green):
 
 ## Open work (as of 2026-10-13)
 
-- [ ] Demo GIF (`docs/demo.gif`, ~10 s: working → storm → clear → done), replace the DEMO comment in README and
-      attach it to the release.
-- [ ] Upload the social preview (`docs/social-preview.png`) in the repository settings (web only).
+- [ ] A real screen recording to sit next to the rendered `docs/demo.gif` (`tools/demo.py`).
 - [ ] Not yet measured: whether Windows Terminal shows every intermediate step of a fade (the owner saw it as smooth),
       light terminal themes, monitors above 1080p.
 - [ ] v0.2: real weather via Open-Meteo (`/sky city`).

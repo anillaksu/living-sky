@@ -8,8 +8,10 @@ Stars around the moon at night, clouds drifting past the sun by day. A meteor sh
 while Claude works, a thunderstorm when a tool fails (then the clouds part and the sky
 comes back), a golden comet when it answers, and a real sunrise and sunset at the hours you pick.
 
-<!-- DEMO: record ~10 s with ScreenToGif while Claude runs a task, save as docs/demo.gif -->
-<img src="docs/scenes.png" alt="living-sky scenes: night idle, night answered, night tool failed, day idle, after the storm, dusk" width="860">
+<img src="docs/demo.gif" alt="one Claude turn under living-sky: calm night, meteor shower while it works, a storm when a test fails, the clouds part, a golden comet when it answers" width="800">
+
+<sub>One turn, rendered frame by frame with the terminal model in <code>tools/review.py</code> and the plugin's own timings
+(<code>python tools/demo.py</code>); not a screen recording.</sub>
 
 [Install](#install) · [Commands](#commands) · [How it works](#how-it-works) · [Make your own sky](#make-your-own-sky)
 
@@ -32,6 +34,8 @@ You glance away while Claude works. The sky tells you what it is doing without r
 | the clock reaches your hours | **dusk**: the sun sets behind the hills | **dawn**: it rises again |
 
 Day and night follow the clock: 07:00 and 19:00 by default, `/sky hours` to change them.
+
+<img src="docs/scenes.png" alt="living-sky scenes: night idle, night answered, night tool failed, day idle, after the storm, dusk" width="860">
 
 ## Install
 
