@@ -45,7 +45,9 @@ In Claude Code, running inside **Windows Terminal**:
 /plugin install living-sky --marketplace anillaksu/living-sky
 ```
 
-Answer `y` to add the marketplace and pick a scope. On the next session start living-sky adds a
+Answer `y` to add the marketplace and pick the **user** scope. (A project scope only loads in that one folder, and
+the "Claude Code" tab starts Claude in your home folder, so its sky would never appear. Already installed per project?
+`claude plugin install living-sky@living-sky --scope user`.) On the next session start living-sky adds a
 **"Claude Code" profile** to Windows Terminal. Open it from the new-tab menu (the ⌄ next to +):
 it starts Claude, and that tab is the one with the sky. Your other tabs keep their own look.
 
@@ -116,6 +118,10 @@ Change the colours, the number of stars, the meteor paths or the storm, regenera
 PRs with new scenes (aurora, snow, a city skyline…) are very welcome.
 
 ## FAQ
+
+**I installed it and nothing happened?** Two usual reasons. The sky only shows in tabs of the "Claude Code" profile:
+open one from the new-tab menu, not a plain PowerShell tab. And the plugin must be installed with the **user** scope
+(see [Install](#install)); `claude plugin list` shows the scope.
 
 **Will it mess up my Windows Terminal settings?** It adds one profile (once; delete it and it stays deleted) and
 touches three keys of that profile alone, keeping every comment. Make a copy of `settings.json` first if you want to be
