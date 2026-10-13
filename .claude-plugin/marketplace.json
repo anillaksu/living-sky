@@ -1,0 +1,14 @@
+{
+  "name": "living-sky",
+  "owner": {
+    "name": "anillaksu"
+  },
+  "description": "A living sky behind Windows Terminal that follows Claude Code.",
+  "plugins": [
+    {
+      "name": "living-sky",
+      "source": "./",
+      "description": "A living sky behind Windows Terminal that follows Claude Code."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "living-sky",
+  "version": "0.1.0",
+  "description": "A living sky behind Windows Terminal that follows Claude: stars at night, clouds by day, a meteor shower while it works, a storm when a tool fails, a sunrise when it is done.",
+  "author": { "name": "anillaksu", "url": "https://github.com/anillaksu" },
+  "homepage": "https://github.com/anillaksu/living-sky",
+  "license": "MIT",
+  "keywords": ["windows-terminal", "background", "ambient", "fun", "theme"]
+}

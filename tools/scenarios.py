@@ -1,0 +1,28 @@
+# The scenarios living-sky is judged on: (what happens, scene, frame, window shape).
+# A frame of -1 is the scene's last. tools/review.py renders them as Windows Terminal would.
+SCENARIOS = [
+    ('night, idle', 'night-idle', 20, 'full 16:9'),
+    ('night, idle', 'night-idle', 20, 'wide, short'),
+    ('night, idle', 'night-idle', 20, 'split pane'),
+    ('night, working', 'night-busy', 12, 'full 16:9'),
+    ('night, working', 'night-busy', 30, 'ultrawide'),
+    ('night, tool fails (flash)', 'night-storm', 5, 'full 16:9'),
+    ('night, storm (rain)', 'night-storm', 10, 'wide, short'),
+    ('night, clouds part', 'night-clear', 12, 'full 16:9'),
+    ('night, turn done: comet', 'night-done', 12, 'full 16:9'),
+    ('night, turn done: comet', 'night-done', 12, 'wide, short'),
+    ('day, idle', 'day-idle', 8, 'full 16:9'),
+    ('day, idle', 'day-idle', 8, 'wide, short'),
+    ('day, idle', 'day-idle', 8, 'split pane'),
+    ('day, working', 'day-busy', 6, 'laptop'),
+    ('day, tool fails (flash)', 'day-storm', 5, 'full 16:9'),
+    ('day, storm (rain)', 'day-storm', 10, 'split pane'),
+    ('day, clouds part, sun climbs', 'day-clear', 18, 'full 16:9'),
+    ('day, clouds part, sun climbs', 'day-clear', 18, 'wide, short'),
+    ('day, turn done: flare, birds', 'day-done', 14, 'full 16:9'),
+    ('day, turn done: flare, birds', 'day-done', 14, 'laptop'),
+    ('7:00 night -> day: dawn', 'dawn', 22, 'full 16:9'),
+    ('7:00 dawn', 'dawn', 22, 'wide, short'),
+    ('19:00 day -> night: dusk', 'dusk', 14, 'full 16:9'),
+    ('19:00 dusk', 'dusk', 26, 'split pane'),
+]
